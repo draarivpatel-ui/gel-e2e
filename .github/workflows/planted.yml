@@ -1,0 +1,9 @@
+# Planted defects for the GEL -> Cilytics end-to-end check. Never runs (manual trigger only).
+# Expected: pinned-actions 1 (tag, not SHA), workflow-permissions 1 (no permissions block).
+name: planted
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
